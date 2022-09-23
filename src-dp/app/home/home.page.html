@@ -1,0 +1,33 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title> Ionic input </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <ion-item>
+      <ion-label>Enrollment No :- </ion-label>
+      <ion-input type="number" [(ngModel)]="user.enro"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Full Name :- </ion-label>
+      <ion-input type="text" [(ngModel)]="user.name"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Email ID :- </ion-label>
+      <ion-input type="email" [(ngModel)]="user.email"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Mobile :- </ion-label>
+      <ion-input type="tel" [(ngModel)]="user.mobile"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <ion-button (click)="submitAndDisplay()" size="medium" expand="block"
+    >Submit and Display</ion-button
+  >
+</ion-content>
